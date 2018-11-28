@@ -680,7 +680,7 @@ body img {
     height: 1px;
 }
 
-#overview, #download, #screenshot, #features, #features_detail, #whoweare, #pricing, #testimonials, #rpost, #brand {
+#overview, #download, #screenshot, #features, #features_detail, #whoweare, #pricing, #testimonials, #rpost, #brand, #skills {
     width: 100%;
     min-height: 50px;
     padding: 80px 0px 80px 0px;
@@ -2680,6 +2680,123 @@ Counters
 }
 
 /*-------------------------------------------------------------------------*/
+/*	10.	Skills Style
+/*-------------------------------------------------------------------------*/
+
+#skills {
+    width: 100%;
+    min-height: 50px;
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
+}
+
+.skills-wrapper:before {
+    background: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.skills-wrapper .section-number:before, .skills-wrapper .section-number:after {
+    background: #fff;
+}
+.skills-wrapper .section-number {
+    background: #fff;
+    border-color: #fff;
+}
+.skills-wrapper {
+    background: url(../images/counters-bg.jpg) no-repeat fixed left top;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    float: left;
+    z-index: 9;
+    padding: 80px 0 50px;
+}
+.skills-wrapper h2 {
+    color: #fff;
+}
+.skills::after {
+    bottom: 18px;
+    color: #ffffff;
+    content: "";
+    font-family: fontawesome;
+    font-size: 45px;
+    opacity: 0.2;
+    position: absolute;
+    right: 10px;
+}
+.skills {
+    border-radius: 5px;
+    overflow: visible;
+    position: relative;
+    padding: 30px 42px 30px 30px;
+    margin: 80px 0 0;
+    text-align: left;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.skills {
+    background: rgba(255,255,255,0.1);
+}
+.skills .author {
+    color: #ffffff;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.skills .title {
+    color: #ffffff;
+    margin: 0 0 15px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.skills p {
+    color: #ffffff;
+    margin: 0;
+}
+.skills .content {
+    border: 5px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    top: -35px;
+    width: 100px;
+}
+.skills .thumb img {
+    display: block;
+    transform-style: preserve-3d;
+    width: auto;
+    border-radius: 50%;
+}
+.skills-wrapper .owl-theme .owl-nav {
+    display: none;
+}
+.skills-wrapper .owl-theme .owl-dots .owl-dot span {
+    background: #8c8d8e;
+    opacity: 1;
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+}
+.skills-wrapper .owl-dots {
+    padding: 30px 0 0;
+}
+#skills .item-inner {
+    margin: 0px 15px;
+}
+#skills .owl-theme .owl-controls {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------*/
 /*	10.	Testimonials Style
 /*-------------------------------------------------------------------------*/
 
@@ -3209,44 +3326,7 @@ Counters
     letter-spacing: 0.5px;
 }
 
-/* #newsletter input {
-    background: #fff;
-    border-radius: 5px;
-    padding: 13px 15px;
-    font-size: 14px;
-    text-transform: capitalize;
-    border: 0;
-    color: #161719;
-    width: 270px;
-    margin-right: 8px;
-} */
 
-/* DEV-ICONS */
-.list-social-icons a {
-    color: #fff; 
-}
-.list-social-icons a:hover
-    {
-    color: #fff; 
-}
-.list-social-icons a .fa-lg {
-    font-size: 1.75rem;
- }
-.list-icons {
-    font-size: 3rem;
- }
-.list-icons .list-inline-item i:hover {
-      color: #fff; 
-}
-.list-inline-item {
-    text-align: center; }
-    .list-inline-item .text-logo {
-      color: #868e96;
-      margin-bottom: 1.5rem; }
-
-/* .devicons {
-    color: #fff; 
-} */
 
       
 
@@ -3988,4 +4068,62 @@ body.offcanvas .offcanvas_overlay {
 		padding: 30px 0px 20px 0px;
 	}
 
+}
+
+/* DEV-ICONS */
+
+.skill-text{
+    margin-top: 12px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 200; 
+}
+
+.list-social-icons a {
+    color: #fff; 
+}
+.list-social-icons a:hover
+    {
+    color: #fff; 
+}
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+ }
+.list-icons {
+    font-size: 3rem;
+ }
+.list-icons .list-inline-item i:hover {
+      color: #fff; 
+}
+.list-inline-item {
+    text-align: center;
+    margin: 20px;
+    width: 150px;
+}
+.list-inline-item .text-logo {
+    color: #fff;
+    margin-bottom: 1.5rem; 
+}
+i.text-logo:hover{
+    color: #fff; 
+}
+.list-icons {
+    font-size: 3rem;
+}
+
+.devicons {
+    color:#fff; 
+} 
+
+
+.skill-type-header{
+    width: 550px;
+    margin: auto;
+    margin-top: 15px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center !important;
 }
