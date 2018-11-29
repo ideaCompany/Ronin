@@ -2269,149 +2269,73 @@ Counters
 }
 
 /*-------------------------------------------------------------------------*/
-/*	7.	Features Style
+/*	7.	Features
 /*-------------------------------------------------------------------------*/
-#features {
-    text-align: center;
-    padding-bottom: 40px;
-    background: #0390d4;
+ #features_detail{
+    padding: 80px 0px 30px 0px;
+}
+#features{
+    padding: 65px 0px 30px 0px;
+    margin-bottom: 15px;
 }
 
-#features h2 {
-    font-size: 30px;
-    line-height: 30px;
-    color: #FFFFFF;
-    padding: 0px 0px 0px 0px;
-    margin: 25px 0px 20px 0px;
-    font-weight: 400;
+#features, #easysetup, #intelligent, #engage {
+    padding: 0px;
     display: inline-block;
-    text-align: center;
+    background: #f8f8f8;
 }
-#features h2 span {
-    font-weight: 800;
+
+div.half_img_box {
+    padding: 0px;
 }
-#features p {
+
+div.half_img_box img {
+    max-width: 100%;
+}
+
+div.half_txt_box, div.half_txt_box1 {
+    display: inline-block;
+    padding: 250px 160px 0px;
+    background: #eeeeee;
+    min-height: 850px;
+}
+
+div.half_txt_box1 {
+    min-height: 850px;
+}
+
+div.half_txt_box h3, div.half_txt_box1 h3 {
+    font-size: 35px;
+    color: #333;
+    margin: 0px 0px 40px;
+}
+
+div.half_txt_box p, div.half_txt_box1 p {
     font-size: 17px;
+    color: #333;
     line-height: 25px;
-    margin: 0px 0px 70px 0px;
-    color: #fff;
+    margin: 0px 0px 30px;
 }
 
-#features .nav_tabs_wrap {
-    padding-top: 20px;
+#intelligent .mob_view {
+    display: none;
 }
 
-#features .nav-tabs {
-    border: none;
-    width: 73%;
-    margin: 0 auto;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    div.half_txt_box, div.half_txt_box1 {
+        min-height: 849px;
+    }
+
+    div.half_txt_box1 {
+        min-height: 849px;
+    }
 }
 
-#features .nav-tabs > li > a {
-    border: none;
-    padding: 15px 33px 15px 33px;
-    width: 205px;
-    color: #dedede;
-    text-transform: uppercase;
-}
 
-#features .nav-tabs > li > a i {
-    font-size: 50px;
-    display: block;
-    margin-bottom: 20px;
-}
 
-#features .nav-tabs > li.active > a, #features .nav-tabs > li.active > a:hover, #features .nav-tabs > li.active > a:focus {
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-#features .nav-tabs > li > a:hover, #features .nav-tabs > li > a:focus {
-    border: none;
-    color: #fff;
-}
-
-#features .nav-tabs > li.active > a:hover, #features .nav-tabs > li.active > a:focus, #features .nav > li > a:hover, #features .nav > li > a:focus {
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-}
-
-#features .nav-tabs > li.active > a:before {
-    position: absolute;
-    bottom: -40px;
-    left: 87px;
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #F0EFF0;
-    z-index: 999999999;
-}
-
-#features .nav-tabs > li > a:hover:before,
-#features .nav-tabs > li > a:focus:before {
-    position: absolute;
-    bottom: -40px;
-    left: 87px;
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #F0EFF0;
-    z-index: 999999999;
-}
-
-#features_detail .tabpanel_list li {
-    color: #777;
-    padding: 5px 5px 5px 35px;
-    line-height: 25px;
-    margin-bottom: 25px;
-    background: url(../images/price_checked.png) no-repeat left center;
-}
-
-#features_detail .tabpanel_txtblock {
-    width: 55%;
-    display: block;
-    float: left;
-}
-
-#features_detail .tabpanel_txtblock h3 {
-    text-align: left;
-    font-size: 26px;
-    line-height: 30px;
-    margin: 0px 0px 20px 0px;
-    font-weight: 400;
-}
-
-#features_detail .tabpanel_txtblock p {
-    text-align: left;
-    margin: 0px 0px 35px 0px;
-    font-weight: 400;
-	font-size:14px;
-}
-
-#features_detail .tabpanel_imgblock {
-    width: 40%;
-    display: block;
-    float: right;
-    max-height: 570px;
-}
-
-#features_detail .tabpanel_imgblock img {
-    max-height: 570px;
-    float: right;
-}
-
-#features_detail .tab-content > .tab-pane {
-    margin-bottom: 30px;
-    min-height: 50px;
-}
-
+/*-------------------------------------------------------------------------*/
+/* END Features
+/*-------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------*/
 /*	8.	Who We Are Style
 /*-------------------------------------------------------------------------*/
